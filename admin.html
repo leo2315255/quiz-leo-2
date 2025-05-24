@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin - I quiz di Leo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+</head>
+<body>
+    <h1>I quiz di Leo - Admin</h1>
+    <div>
+        <label>Numero domande:</label>
+        <input type="number" id="num_questions" min="1" max="50">
+        <button onclick="createRoom()">Crea Stanza</button>
+    </div>
+    <div id="question_controls" style="display:none;">
+        <p>Domanda <span id="current_question">1</span></p>
+        <label>Risposta corretta (A, B, C, D):</label>
+        <input type="text" id="correct_answer" maxlength="1">
+        <button onclick="startRound()">Inizia Round</button>
+        <h2>Classifica Round</h2>
+        <ul id="round_scores"></ul>
+        <h2>Classifica Generale</h2>
+        <ul id="total_scores"></ul>
+    </div>
+    <script src="firebase-config.js"></script>
+    <script src="script-admin.js"></script>
+</body>
+</html>

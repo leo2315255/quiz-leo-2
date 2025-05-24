@@ -1,0 +1,16 @@
+
+body.christmas-theme {
+    background-color: #f0f8ff;
+    color: #004d00;
+    font-family: sans-serif;
+    background-image: url('https://www.transparenttextures.com/patterns/giftly.png');
+}
+button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}

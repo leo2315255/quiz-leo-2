@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>I quiz di Leo - Giocatore</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+</head>
+<body class="christmas-theme">
+    <h1>I quiz di Leo</h1>
+    <div id="join_section">
+        <input type="text" id="room_code" placeholder="Codice stanza">
+        <input type="text" id="player_name" placeholder="Nome giocatore">
+        <button onclick="joinRoom()">Entra</button>
+    </div>
+    <div id="quiz_section" style="display:none;">
+        <h2>Scegli una risposta</h2>
+        <button onclick="sendAnswer('A')">A</button>
+        <button onclick="sendAnswer('B')">B</button>
+        <button onclick="sendAnswer('C')">C</button>
+        <button onclick="sendAnswer('D')">D</button>
+        <p id="feedback"></p>
+        <button onclick="exitRoom()">Esci</button>
+    </div>
+    <script src="firebase-config.js"></script>
+    <script src="script-player.js"></script>
+</body>
+</html>
